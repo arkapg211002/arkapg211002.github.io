@@ -95,12 +95,38 @@
                 ><i class="las la-phone-volume"></i> Contact</a
               >
             </li>
+            
+            <!-- terminal button added -->
+          <li class="nav-item">
+            <a role="button" class="nav-link" onclick = "createPopupWin('https://arkapg-terminal.vercel.app/',
+            'Arkapratim Ghosh Terminal', 1200, 650);" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <i class="las la-terminal"></i> Terminal
+            </a>
+          </li>
+            <!-- terminal button -->
+            
           </ul>
         </div>
       </div>
     </nav>
     <!-- //NAVBAR -->
+    
+    <!-- MODAL --> 
+  <!-- script for popup -->
+    <script>
 
+      function createPopupWin(pageURL, pageTitle,popupWinWidth, popupWinHeight) 
+      {
+          var left = (screen.width - popupWinWidth) / 2;
+          var top = (screen.height - popupWinHeight) / 4;
+             
+          var myWindow = window.open(pageURL, pageTitle,'resizable=yes, width=' + popupWinWidth + ', height=' + popupWinHeight + ', top=' + top + ', left=' + left);
+      }
+    </script>
+  <!-- MODAL -->
+    
+    
+    
     <!-- CONTENT WRAPPER -->
     <div id="content-wrapper">
       <!-- HOME -->
