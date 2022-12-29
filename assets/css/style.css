@@ -451,3 +451,143 @@ img {
 }
 
 /* Scrollbar ends */
+
+/* footer */
+
+.new_footer_area {
+    background: #00223a;
+}
+
+
+.new_footer_top {
+    padding: 0px 0px 270px;
+    position: relative;
+      overflow-x: hidden;
+}
+.new_footer_area {
+    padding-top: 1px;
+    padding-bottom: 20px;
+}
+.new_footer_top {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #6a7695;
+    margin-bottom: 20px;
+}
+.new_footer_top {
+    border-width: 1px;
+    margin-top: 20px;
+}
+
+.new_footer_top {
+    color: #5e2ced;
+}
+.new_footer_top {
+    margin-bottom: 11px;
+}
+.new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #001829;
+    font-size: 24px;
+}
+.f_social_icon a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    color: #858da8;
+    display: inline-block;
+    background: #00223a;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.new_footer_top .f_social_icon a:hover {
+    background: rgb(1, 45, 77);
+    border-color: #5e2ced;
+  color:white;
+}
+.new_footer_top .f_social_icon {
+    margin-left: 4px;
+}
+.new_footer_top {
+    margin-bottom: 30px;
+    color: #263b5e;
+}
+
+.new_footer_top {
+    color: #6a7695;
+}
+
+/* background */
+.new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url("../images/footer_bg.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
+}
+
+/* car */
+.new_footer_top .footer_bg .footer_bg_one {
+    background: url("../images/volks.gif") no-repeat center center;
+    width: 330px;
+    height: 105px;
+  background-size:100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+}
+
+/* cycle */
+.new_footer_top .footer_bg .footer_bg_two {
+    background: url("../images/cyclist.gif") no-repeat center center;
+    width: 88px;
+    height: 100px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+}
+
+
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
