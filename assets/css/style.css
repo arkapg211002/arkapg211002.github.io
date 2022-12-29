@@ -75,7 +75,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-brand);
+    color: var(--color-brand2);
 }
 
 img {
@@ -83,7 +83,7 @@ img {
 }
 
 .text-brand {
-    color: var(--color-brand);
+    color: var(--color-brand2);
 }
 
 .bg-base {
