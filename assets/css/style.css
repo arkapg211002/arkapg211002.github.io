@@ -173,6 +173,7 @@ img {
         background: linear-gradient(rgba(1, 45, 77, 0.8), rgba(1, 45, 77, 0.8)), url(../images/sidebar-img.png);
         background-size: cover;
         background-position: center;
+        border-radius: 0 30px 30px 0;
     }
 
     .navbar-brand img {
