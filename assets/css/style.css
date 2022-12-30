@@ -187,7 +187,7 @@ img {
 
         background: url(../images/pic1.png);
         background-position: right center;
-        ;
+        border: none;
         background-repeat: no-repeat;
         background-size: contain;
 
@@ -203,6 +203,7 @@ img {
     background-position: right center;
     background-repeat: no-repeat;
     background-size: contain;
+    border: none;
 }
 
 #edu {
@@ -210,6 +211,7 @@ img {
     background-position: left center;
     background-repeat: no-repeat;
     background-size: contain;
+    border: none;
 }
 
 #serve {
@@ -217,6 +219,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    border: none;
 }
 
 
@@ -225,6 +228,7 @@ img {
     background-position: right center;
     background-repeat: no-repeat;
     background-size: contain;
+    border: none;
 
 }
 
@@ -233,6 +237,7 @@ img {
     background-position: right center;
     background-repeat: no-repeat;
     background-size: contain;
+    border: none;
 }
 
 #skillpic2 {
@@ -240,6 +245,7 @@ img {
     background-position: left center;
     background-repeat: no-repeat;
     background-size: contain;
+    border: none;
 }
 
 
@@ -531,6 +537,7 @@ img {
     position: absolute;
     bottom: 0;
     background: url("../images/footer_bg.png") no-repeat scroll center 0;
+    
     width: 100%;
     height: 266px;
 }
