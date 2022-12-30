@@ -148,6 +148,7 @@ img {
 /* NAVBAR */
 .navbar {
     background-color: var(--color-base);
+    border-radius: 0 0 30px 0;
 }
 
 .navbar .nav-link {
