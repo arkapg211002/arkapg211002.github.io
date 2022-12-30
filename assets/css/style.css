@@ -165,6 +165,11 @@ img {
     color: var(--color-brand);
 }
 
+.shadow{
+    box-shadow: 3px 2px 26px 0px rgba(18,18,18,0.75) !important;
+    -webkit-box-shadow: 3px 2px 26px 0px rgba(18,18,18,0.75) !important;
+    -moz-box-shadow: 3px 2px 26px 0px rgba(18,18,18,0.75) !important;
+}
 
 @media (min-width: 992px) {
     .navbar {
