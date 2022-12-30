@@ -109,6 +109,24 @@
         </div>
       </div>
     </nav>
+    
+    <!-- collapse nav bar on clicking nav item -->
+  <script>
+    const navLink = document.querySelectorAll(".nav-item");
+    const navBar = document.querySelector(".navbar");
+    const navBarToggle = document.querySelector(".navbar-toggler");
+    const navBarCollapse = document.querySelector(".navbar-collapse");
+
+    navLink.forEach((link) => {
+      link.addEventListener("click", () => {
+        navBar.classList.remove("show");
+        navBarToggle.classList.add("collapsed");
+        navBarCollapse.classList.remove("show");
+      });
+    });
+  </script>
+  <!-- collapse nav bar on clicking nav item added -->
+    
     <!-- //NAVBAR -->
     
     <!-- MODAL --> 
