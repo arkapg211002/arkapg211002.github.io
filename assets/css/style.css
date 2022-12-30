@@ -25,7 +25,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--color-base);
+    background-color: var(--color-base2);
     z-index: 9999;
     display: flex;
     align-items: center;
