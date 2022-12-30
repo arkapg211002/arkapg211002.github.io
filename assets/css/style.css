@@ -270,6 +270,9 @@ img {
     border: none;
 }
 
+#home{
+    border: none;
+}
 
 .bg-warning {
     background-color: var(--color-brand) !important;
