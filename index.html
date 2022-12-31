@@ -215,7 +215,7 @@
                     <h4 class="text-center">
                       Courses <i class="las la-project-diagram"></i>
                     </h4>
-                    <p class="text-center text-brand"><b>23</b></p>
+                    <p id="01" class="text-center text-brand"><b>23</b></p>
                     <!-- view all courses-->
                   <p class="text-center"><a href="https://www.linkedin.com/in/arkapratim-ghosh21102002/details/certifications/" target="_blank" class="link-custom">View All <i class="las la-arrow-circle-right"></i></a>
                   </p>
@@ -232,7 +232,7 @@
                     <h4 class="text-center">
                       Certificates <i class="lab la-buromobelexperte"></i>
                     </h4>
-                    <p class="text-center text-brand"><b>17</b></p>
+                    <p id="02" class="text-center text-brand"><b>17</b></p>
                     <!-- view all certificates-->
                   <p class="text-center"><a href="https://www.linkedin.com/in/arkapratim-ghosh21102002/details/certifications/" target="_blank" class="link-custom">View All <i class="las la-arrow-circle-right"></i></a>
                   </p>
@@ -1262,9 +1262,50 @@
     <!-- SCRIPTS -->
 
     <script>
+      //Automatic counter on load for courses and certificates
+      function animate(obj, initVal, lastVal, duration) {
+         let startTime = null;
+
+      //get the current timestamp and assign it to the currentTime variable
+      let currentTime = Date.now();
+
+      //pass the current timestamp to the step function
+      const step = (currentTime ) => {
+
+      //if the start time is null, assign the current time to startTime
+      if (!startTime) {
+         startTime = currentTime ;
+      }
+
+      //calculate the value to be used in calculating the number to be displayed
+      const progress = Math.min((currentTime - startTime)/ duration, 1);
+
+      //calculate what to be displayed using the value gotten above
+      obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+      //obj.innerHTML.style.fontWeight = "bold";
+
+      //checking to make sure the counter does not exceed the last value (lastVal)
+      if (progress < 1) {
+         window.requestAnimationFrame(step);
+      } else {
+            window.cancelAnimationFrame(window.requestAnimationFrame(step));
+         }
+      };
+      //start animating
+         window.requestAnimationFrame(step);
+      }
+      let text1 = document.getElementById('01');
+      let text2 = document.getElementById('02');
+      // id of <p> courses , certificates taken
+      
       var preloader = document.getElementById("load");
       function content() {
         preloader.style.display = "none";
+        
+        //Automatic counter on load for courses and certificates
+        animate(text1, 0, 23, 2400);
+        animate(text2, 0, 17, 2400);
+        // 23 courses , 17 certificates taken animation added
       }
     </script>
 
