@@ -183,11 +183,59 @@ img {
 
     .navbar-brand img {
         border: 6px solid var(--color-brand);
+        padding: 5px;
     }
     
     .navbar-brand img:hover{
-        border: 7px solid var(--color-brand2);
+        border: 7px dashed var(--color-brand2);
+        padding: 5px;
+        animation: animate 0.6s infinite linear forwards;
+        
     }
+
+    @keyframes animate {
+        0% {
+            
+            border-top-color:var(--color-brand2);
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+        }
+        
+        25% {
+            
+            border-top-color: transparent;
+            border-right-color: var(--color-brand2);
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+        }
+
+        50% {
+            
+            border-top-color: transparent;
+            border-right-color: var(--color-brand2);
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+        }
+
+        75% {
+            
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: var(--color-brand2);
+            border-left-color: transparent;
+        }
+
+        100% {
+            
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: var(--color-brand2);
+        }
+    }
+    
+    
 
     /* CONTENT WRAPPER */
     #content-wrapper {
