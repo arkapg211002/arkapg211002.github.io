@@ -102,6 +102,9 @@ img {
 }
 
 .shadow-effect {
+    box-shadow: 11px 13px 26px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 11px 13px 26px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 13px 26px -9px rgba(0,0,0,0.75);
     transition: all 0.5s;
 }
 
