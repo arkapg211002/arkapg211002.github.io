@@ -195,7 +195,8 @@ img {
         font-style: italic;
         font-weight: bold;
         position: absolute;
-        bottom: -1.6em;        
+        /*bottom: -1.6em; */
+        bottom: 90%;
         left: 70%;
         padding: 0.5em 1em;
         color: #00223a;
