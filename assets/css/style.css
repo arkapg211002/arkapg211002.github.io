@@ -183,7 +183,53 @@ img {
         background-position: center;
         border-radius: 0 30px 30px 0;
     }
+    
+    /* data title for profile pic added */
+    [data-title]:hover:after {
+        opacity: 1;
+        transition: all 0.1s ease 0.3s;
+        visibility: visible;
+    }
+    [data-title]:after {
+        content: attr(data-title);
+        font-style: italic;
+        font-weight: bold;
+        position: absolute;
+        bottom: -1.6em;        
+        left: 70%;
+        padding: 0.5em 1em;
+        color: #00223a;
+        white-space: wrap; 
+        -moz-border-radius: 5px; 
+        -webkit-border-radius: 5px;  
+        border-radius: 30px;  
+        -moz-box-shadow: 0px 0px 4px #222;  
+        -webkit-box-shadow: 0px 0px 4px #222;  
+        /*  
+        background-image: -moz-linear-gradient(top, #f8f8f8, #cccccc);  
+        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f8f8f8),color-stop(1, #cccccc));
+        background-image: -webkit-linear-gradient(top, #f8f8f8, #cccccc);  
+        background-image: -moz-linear-gradient(top, #f8f8f8, #cccccc);  
+        background-image: -ms-linear-gradient(top, #f8f8f8, #cccccc);  
+        background-image: -o-linear-gradient(top, #f8f8f8, #cccccc); */
+        opacity: 0;
+        z-index: 99999;
+        visibility: hidden;
 
+        box-shadow: 11px 13px 26px -9px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 11px 13px 26px -9px rgba(0,0,0,0.75);
+        -moz-box-shadow: 11px 13px 26px -9px rgba(0,0,0,0.75);
+        
+        backdrop-filter: blur(3px) saturate(180%);
+        -webkit-backdrop-filter: blur(3px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.72);
+    
+    
+    }
+    [data-title] {
+        position: relative;
+    }
+    
     .navbar-brand img {
         border: 6px solid var(--color-brand);
         padding: 5px;
