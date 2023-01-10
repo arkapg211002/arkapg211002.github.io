@@ -52,6 +52,24 @@
             alt=""
           />
         </a>
+        
+        <!-- Change theme -->
+      <a class="nav-link" href="#" data-aos="fade-right" data-aos-delay="450" data-title="Change Theme" id="theme"><i class="las la-sun" style="font-size: larger;"></i></a>
+      <script>
+        const theme = document.getElementById('theme');
+        theme.addEventListener('click', () => {
+          document.body.classList.toggle('white-theme');
+          if (document.body.classList.contains('white-theme')) {
+            theme.innerHTML = '<i class="las la-moon" style="font-size: larger;"></i>';
+            
+          } else {
+            theme.innerHTML = '<i class="las la-sun" style="font-size: larger;"></i>';
+          }
+        });
+
+      </script>
+      <!-- //Change theme -->
+        
         <button
           class="navbar-toggler"
           type="button"
