@@ -75,6 +75,11 @@ body {
     color: var(--color-body) !important;
 }
 
+.navbar-toggler{
+    color: var(--color-brand) !important;
+}
+
+
 h1,
 h2,
 h3,
