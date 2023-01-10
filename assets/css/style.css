@@ -3,7 +3,7 @@
 :root {
     --color-body: #eaf2f3;
     --color-heading: #eef3db;
-    --color-base: rgb(1, 45, 77);
+    --color-base: rgb(1, 45, 77, 0.8);
     --color-base2: #00223a;
     --color-brand: #e0f780;
     --color-brand2: #deff58;
