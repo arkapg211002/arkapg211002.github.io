@@ -71,6 +71,10 @@ body {
     font-family: var(--font-base), sans-serif;
 }
 
+.nav-text{
+    color: var(--color-body) !important;
+}
+
 h1,
 h2,
 h3,
