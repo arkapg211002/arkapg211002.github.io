@@ -76,7 +76,7 @@ body {
 }
 
 .navbar-toggler{
-    color: var(--color-brand) !important;
+    color: var(--color-body) !important;
 }
 
 
