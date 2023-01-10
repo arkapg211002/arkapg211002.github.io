@@ -54,12 +54,11 @@
         </a>
         
         <!-- Change theme -->
-      <a class="nav-link" href="#" data-aos="fade-right" data-aos-delay="450" data-title="Change Theme" id="theme"><i class="las la-sun" style="font-size: larger;"></i></a>
+      <button type="button" style="background-color: transparent;border: none;" class="nav-link" data-aos="fade-right" data-aos-delay="450" data-title="Change Theme" id="theme"><i class="las la-sun" style="font-size: larger;"></i></button>
       <script>
         const theme = document.getElementById('theme');
         theme.addEventListener('click', () => {
           document.body.classList.toggle('white-theme');
-          theme.href = window.location.href;
           if (document.body.classList.contains('white-theme')) {
             theme.innerHTML = '<i class="las la-moon" style="font-size: larger;"></i>';
             
