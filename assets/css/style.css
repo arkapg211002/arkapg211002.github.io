@@ -11,6 +11,19 @@
     --font-base: "Bai Jamjuree";
 }
 
+/* white theme added */
+.white-theme{
+    --color-body: #00223a;
+    --color-heading: rgb(1, 45, 77,0.8);
+    --color-base: rgba(209, 240, 244, 0.8);
+    --color-base2: #e5fbfe;
+    --color-brand: #457a82cc;
+    --color-brand2: #4a666acc;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -157,7 +170,7 @@ img {
 .navbar .nav-link {
     font-weight: 700;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--color-body); /* added for theme change*/
 }
 
 .navbar .nav-link:hover {
@@ -178,7 +191,7 @@ img {
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(1, 45, 77, 0.8), rgba(1, 45, 77, 0.8)), url(../images/sidebar-img.png);
+        background: linear-gradient(var(--color-base), var(--color-base)), url(../images/sidebar-img.png); /* added for theme change*/
         background-size: cover;
         background-position: center;
         border-radius: 0 30px 30px 0;
@@ -593,7 +606,7 @@ img {
 /* footer */
 
 .new_footer_area {
-    background: #00223a;
+    background: var(--color-base2); /* changed */
 }
 
 
