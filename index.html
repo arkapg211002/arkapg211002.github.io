@@ -59,6 +59,7 @@
         const theme = document.getElementById('theme');
         theme.addEventListener('click', () => {
           document.body.classList.toggle('white-theme');
+          theme.href = window.location.href;
           if (document.body.classList.contains('white-theme')) {
             theme.innerHTML = '<i class="las la-moon" style="font-size: larger;"></i>';
             
