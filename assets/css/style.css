@@ -596,7 +596,7 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(1, 45, 77);
+    background: var(--color-base);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -617,11 +617,11 @@ img {
 }
 
 ::-webkit-scrollbar-corner{
-    background: rgb(1, 45, 77);
+    background: var(--color-base);
 }
 
 ::-webkit-scrollbar-track-piece{
-    background: rgb(1, 45, 77);
+    background: var(--color-base);
 }
 
 /* Scrollbar ends */
