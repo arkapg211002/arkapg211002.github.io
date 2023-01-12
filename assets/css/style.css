@@ -392,6 +392,20 @@ img {
     border: none;
 }
 
+/* coding added */
+#coding{
+    border: none;
+}
+
+#code {
+    background: url(../images/code.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-size: contain;
+}
+/* coding added */
+
 #services{
     border: none;
 }
