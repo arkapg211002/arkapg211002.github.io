@@ -1434,12 +1434,50 @@
           <div class="row gy-4 justify-content-between">
             <div class="col-auto">
               <p class="mb-0">
-                © 2022
+                © 2022-23
                 <a
                   href="https://www.linkedin.com/in/arkapratim-ghosh21102002/" target="_blank"
                   class="fw-bold"
                   >ARKAPRATIM GHOSH</a
                 >
+                                 
+              <!-- profile visits -->
+              <i class="las la-eye"></i>
+              <span class="profile-views-count" id="view">0</span>
+              <script>
+                  var count = document.querySelectorAll('.profile-views-count')[0];
+                  var visitcount = localStorage.getItem('profile-views-count');
+                  if (visitcount === null) {
+                    localStorage.setItem('profile-views-count', 1);
+                    count.innerHTML = 1;
+                  } else {
+                    visitcount = parseInt(visitcount) + 1;
+                    localStorage.setItem('profile-views-count', visitcount);
+                    count.innerHTML = visitcount;
+                  }       
+                                      
+                  function animate(obj, initVal, lastVal, duration) {
+                  let startTime = null;          
+                  let currentTime = Date.now();                  
+                  const step = (currentTime ) => {                  
+                  if (!startTime) {
+                    startTime = currentTime ;
+                  }                  
+                  const progress = Math.min((currentTime - startTime)/ duration, 1);
+                  obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);                  
+                  if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                  } else {
+                        window.cancelAnimationFrame(window.requestAnimationFrame(step));
+                    }
+                  };                  
+                  window.requestAnimationFrame(step);
+                  }                   
+                  animate(document.getElementById('view'), 0, visitcount, 2000);                                              
+                  
+              </script>
+              <!-- profile visits -->
+                                 
               </p>
             </div>
             <div class="col-auto">
