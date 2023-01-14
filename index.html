@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://s3.amazonaws.com/myadvobuck/static/libs/typed.min.js"></script>
+    <!-- count visits using count api -->
+    <script async src="https://api.countapi.xyz/hit/arkapg211002.github.io/visits?callback=callbackName"></script>
   </head>
 
   <body data-bs-spy="scroll" data-bs-target=".navbar" onload="content()">
@@ -1445,7 +1447,7 @@
               <i class="las la-eye"></i>
               <span class="profile-views-count" id="view">1</span>
               <script>
-                  var count = document.querySelectorAll('.profile-views-count')[0];
+                  /* var count = document.querySelectorAll('.profile-views-count')[0];
                   var visitcount = localStorage.getItem('profile-views-count');
                   if (visitcount === null) {
                     localStorage.setItem('profile-views-count', 1);
@@ -1473,7 +1475,12 @@
                   };                  
                   window.requestAnimationFrame(step);
                   }                   
-                  animate(document.getElementById('view'), 0, visitcount, 2000);                                              
+                  animate(document.getElementById('view'), 0, visitcount, 2000); 
+                  */
+                   
+                  function callbackName(response) {
+                    document.getElementById('view').innerText = response.value;
+                  }
                   
               </script>
               <!-- profile visits -->
