@@ -8,4 +8,4 @@
 > 
 ![Light theme](https://github.com/arkapg211002/arkapg211002.github.io/blob/main/s2.png)
 
-![Page Speed](https://github.com/arkapg211002/arkapg211002/blob/main/metrics.plugin.pagespeed.screenshot.svg)
+
